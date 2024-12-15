@@ -1,0 +1,190 @@
+/* Mobile Menu Wrapper */
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background: radial-gradient(circle, #1b0130, #000000);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateX(-100vw);
+  transition: all 0.6s ease-in-out;
+  overflow: hidden;
+}
+@keyframes nebula-pulse {
+  0% {
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 20, 147, 0.6),
+      rgba(75, 0, 130, 0.5),
+      rgba(0, 255, 255, 0.4),
+      transparent
+    );
+  }
+  50% {
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 165, 0, 0.6),
+      rgba(0, 0, 255, 0.5),
+      rgba(138, 43, 226, 0.4),
+      transparent
+    );
+  }
+  100% {
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 20, 147, 0.6),
+      rgba(75, 0, 130, 0.5),
+      rgba(0, 255, 255, 0.4),
+      transparent
+    );
+  }
+}
+
+.mobile-menu::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  filter: blur(100px);
+  animation: nebula-pulse 12s infinite alternate, nebula-spin 6s infinite linear;
+}
+
+/* Starfield */
+.mobile-menu::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/tiny-stars.png");
+  opacity: 0.2;
+}
+
+/* Animate Nebula */
+@keyframes nebula-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Menu Active State */
+.mobile-menu.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Menu Container */
+.mobile-menu-container {
+  width: 70vw;
+  height: 100vh;
+  background: radial-gradient(circle, #2a2a2a, #000000);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  animation: slide-in 0.7s ease forwards;
+}
+
+/* Slide-In Animation */
+@keyframes slide-in {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  }
+}
+
+/* Menu Items */
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.mobile-menu li {
+  text-align: left;
+}
+
+/* Menu Links */
+.mobile-menu a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  transition: color 0.4s ease, transform 0.3s ease;
+}
+
+/* Nebula Effect on Hover */
+.mobile-menu a:hover::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255, 0, 221, 0.4), transparent);
+  filter: blur(50px);
+  z-index: -1;
+}
+
+.mobile-menu a:hover {
+  color: #ff6bcb;
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 107, 203, 0.8);
+}
+
+/* Menu Item Animation */
+.mobile-menu ul li {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fade-in 0.8s ease forwards;
+}
+
+.mobile-menu.active ul li:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.mobile-menu.active ul li:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.mobile-menu.active ul li:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.mobile-menu.active ul li:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+

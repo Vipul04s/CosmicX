@@ -1,0 +1,161 @@
+/* General styling */
+.video-info-container {
+  height: 28vh; /* Remaining space from 72vh video */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+/* Animated Text Section */
+.animated-text {
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.main-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #f39c12, #e74c3c, #8e44ad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: textGlow 3s infinite alternate;
+}
+
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #c0c7e3;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Background Stars Effect */
+.background-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5) 1px,
+    transparent 1px
+  );
+  background-size: 3px 3px;
+  animation: starBackground 50s linear infinite;
+}
+
+/* Shooting Stars Animation */
+.shooting-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: linear-gradient(90deg, #f39c12, transparent);
+  animation: shooting 4s infinite ease-in-out;
+  filter: blur(1px);
+}
+
+.star:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.star:nth-child(2) {
+  top: 40%;
+  left: 50%;
+  animation-delay: 0.5s;
+}
+
+.star:nth-child(3) {
+  top: 10%;
+  left: 80%;
+  animation-delay: 1s;
+}
+
+.star:nth-child(4) {
+  top: 70%;
+  left: 20%;
+  animation-delay: 1.5s;
+}
+
+.star:nth-child(5) {
+  top: 30%;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+/* Animations */
+@keyframes shooting {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50vw) translateY(-50vh);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 10px #f39c12, 0 0 20px #e74c3c, 0 0 30px #8e44ad;
+  }
+  to {
+    text-shadow: 0 0 20px #e74c3c, 0 0 30px #8e44ad, 0 0 40px #f39c12;
+  }
+}
+
+@keyframes starBackground {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}
