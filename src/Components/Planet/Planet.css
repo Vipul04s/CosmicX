@@ -43,7 +43,7 @@
   transition: all 0.3s ease-in-out;
   width: 100%;
   max-width: 14rem;
-  animation: zoomIn 1.5s ease, glow 2s ease-in-out infinite;
+  animation: zoomIn 1.5s ease, glow 3s ease-in-out infinite;
 }
 
 .planet-card:hover,
@@ -81,6 +81,7 @@
   height: auto;
   object-fit: contain;
   animation: imgGlow 3s infinite ease-in-out;
+
 }
 
 /* Keyframes for Animations */
@@ -111,7 +112,7 @@
   }
   50% {
     box-shadow: 0 0 30px rgba(255, 255, 255, 1),
-      0 0 60px rgba(255, 255, 255, 0.8);
+      0 0 60px rgba(255, 255, 255, 0.1);
   }
   100% {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6),
@@ -212,11 +213,10 @@
 
   .planet,
   .planet-info {
-    width: 200%;
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    width: 100%;
+    grid-template-columns: repeat(2, 8rem); /* 2 items per row */
     grid-template-rows: repeat(4, auto); /* 4 rows */
   }
-
   .skills-conatiner h5 {
     font-size: 1.3rem;
     margin-bottom: 2rem;
@@ -226,6 +226,15 @@
   .skills-conatiner::before {
     width: 18rem;
     height: 18rem;
+  }
+
+  .planet-info-content {
+    margin: -15px;
+  }
+  .planet-content {
+    margin-left: -12vw;
+    width: 55vw;
+    /* justify-content: center; */
   }
 }
 

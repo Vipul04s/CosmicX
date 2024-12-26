@@ -53,12 +53,12 @@ trying */
   cursor: pointer;
   transition: all 0.3s ease;
   width: 12rem;
-  animation: popUp 1s ease-in-out;
+  /* animation: popUp 1s ease-in-out; */
 }
 
 .planet-card:hover,
 .planet-card.active {
-  background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
+  background: linear-gradient(0deg, #242424 0%, #070317 20%);
   box-shadow: 0 10px 20px rgba(148, 112, 255, 0.7);
 }
 
@@ -68,21 +68,22 @@ trying */
 }
 
 .planet-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 0rem;
+  height: 0rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2a2252;
+  background: linear-gradient(0deg, #242424 0%, #070317 20%);
   border-radius: 0.65rem;
-  border: 1.5px solid #6852ba;
+  border: 1.5px solid transparent;
   position: absolute;
-  top: -1rem;
-  left: -1rem;
+  top: 0.1rem;
+  left: -0.1rem;
+  /* background: transparent; */
 }
 
 .planet-icon img {
-  width: 2.4rem;
+  width: 3rem;
   height: auto;
   object-fit: contain;
 }
@@ -96,10 +97,10 @@ trying */
   }
 
   .planet-icon {
-    width: 3rem;
-    height: 3rem;
-    top: -0.8rem;
-    left: -0.8rem;
+    width: 0rem;
+    height: 0rem;
+    top: 0.1rem;
+    left: -0.1rem;
   }
 }
 

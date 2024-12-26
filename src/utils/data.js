@@ -1,7 +1,7 @@
 export const PLANET = [
   {
     title: "Mercury",
-    icon: "https://img.icons8.com/?size=100&id=11450&format=png",
+    icon: "./planets/mercury-svgrepo-com.svg",
     skills: [
       { skill: "Solar Energy", percentage: "90%" },
       { skill: "Crystals", percentage: "70%" },
@@ -12,7 +12,7 @@ export const PLANET = [
 
   {
     title: "Venus",
-    icon: "https://img.icons8.com/?size=100&id=11450&format=png",
+    icon: "./planets/venus-svgrepo-com.svg",
     skills: [
       { skill: "Acid Clouds", percentage: "100%" },
       { skill: "Magnetic Storms", percentage: "60%" },
@@ -23,7 +23,7 @@ export const PLANET = [
 
   {
     title: "Earth",
-    icon: "https://img.icons8.com/?size=100&id=11450&format=png",
+    icon: "./planets/earth-svgrepo-com.svg",
     skills: [
       { skill: "Water (Oceans)", percentage: "99%" },
       { skill: "Oxygen", percentage: "100%" },
@@ -34,7 +34,7 @@ export const PLANET = [
 
   {
     title: "Mars",
-    icon: "https://img.icons8.com/?size=100&id=11450&format=png",
+    icon: "./planets/mars-svgrepo-com(1).svg",
     skills: [
       { skill: "Iron Oxide", percentage: "85%" },
       { skill: "Frozen Water", percentage: "60%" },
@@ -45,7 +45,7 @@ export const PLANET = [
 
   {
     title: "Jupiter",
-    icon: "https://img.icons8.com/?size=100&id=11450&format=png",
+    icon: "./planets/jupiter-svgrepo-com(1).svg",
     skills: [
       { skill: "Gas Storms", percentage: "100%" },
       { skill: "Hydrogen Energy", percentage: "90%" },
@@ -56,7 +56,7 @@ export const PLANET = [
 
   {
     title: "Saturn",
-    icon: "https://img.icons8.com/?size=100&id=11450&format=png",
+    icon: "./planets/saturn-svgrepo-com.svg",
     skills: [
       { skill: "Rings of Ice", percentage: "100%" },
       { skill: "Space Ice Mining", percentage: "75%" },
@@ -67,7 +67,7 @@ export const PLANET = [
 
   {
     title: "Uranus",
-    icon: "https://img.icons8.com/?size=100&id=11450&format=png",
+    icon: "./planets/uranus-svgrepo-com.svg",
     skills: [
       { skill: "Wind Energy", percentage: "100%" },
       { skill: "Magnetic Fields", percentage: "85%" },
@@ -78,7 +78,7 @@ export const PLANET = [
 
   {
     title: "Neptune",
-    icon: "https://img.icons8.com/?size=100&id=11450&format=png",
+    icon: "./planets/neptune-svgrepo-com.svg",
     skills: [
       { skill: "Oceanic Storms", percentage: "100%" },
       { skill: "Atmospheric Dynamics", percentage: "90%" },
