@@ -29,3 +29,14 @@ body {
   padding: 0;
   box-sizing: inherit;
 }
+
+html,
+body {
+  scroll-behavior: auto; /* Disable smooth scrolling for testing */
+}
+#root {
+  position: relative;
+  overflow: visible; /* Ensure content isn't clipped */
+  min-height: 100%; /* Ensure it doesn't restrict scrolling */
+  background-attachment: scroll; /* Normal scrolling behavior */
+}

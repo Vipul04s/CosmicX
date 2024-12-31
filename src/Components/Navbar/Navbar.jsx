@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import MobileNav from "./MobileNav/MobileNav.jsx";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,7 +34,6 @@ const Navbar = () => {
     }
     return stars;
   };
-  
 
   return (
     <>
@@ -45,9 +45,9 @@ const Navbar = () => {
           <img className="logo" src="./src/assets/logo4.png" alt="Logo"></img>
           <ul>
             <li>
-              <a className="menu-item" href="#home">
+              <Link className="menu-item" to="/">
                 HOME
-              </a>
+              </Link>
             </li>
             <li>
               <a className="menu-item" href="#events">
@@ -85,4 +85,4 @@ const Navbar = () => {
 
 export default Navbar;
 
-// my code 
+// my code
