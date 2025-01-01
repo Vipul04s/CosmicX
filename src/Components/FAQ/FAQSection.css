@@ -7,12 +7,11 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(to bottom, #121212, #121212, #121212);
-
   overflow: hidden;
 }
 
 /* Flying Stars Animation */
-.cosmic-faq-wrapper::before {
+/* .cosmic-faq-wrapper::before {
   content: "";
   position: absolute;
   top: 0;
@@ -31,7 +30,7 @@
   100% {
     transform: translate(-50%, -50%);
   }
-}
+} */
 
 /* Rocket Animation */
 .rocket {
@@ -147,4 +146,13 @@
 .faq-icon {
   font-size: 1.5rem;
   animation: orbit 3s infinite linear;
+}
+@media screen and (max-width: 768px) {
+  .cosmic-faq{
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+  .cosmic-faq-wrapper{
+    padding: 1vh;
+  }
 }
