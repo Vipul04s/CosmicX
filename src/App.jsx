@@ -8,6 +8,7 @@ import Planet from "./Components/Planet/Planet";
 import Footer from "./Components/Footer/Footer";
 import PrivacyPolicy from "./Components/Privacy/PrivacyPolicy";
 import ResetToTop from "./Components/ResetToTop";
+import FAQSection from "./Components/FAQ/FAQSection";
 import "./App.css";
 
 const App = () => {
@@ -56,6 +57,7 @@ const App = () => {
             }
           />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/faq" element={<FAQSection />} />
         </Routes>
         <GoToTop scrollToTop={scrollToTop} isVisible={isVisible} />
       </div>

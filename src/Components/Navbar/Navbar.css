@@ -3,6 +3,7 @@
   background: rgba(0, 0, 0, 0.8);
   padding: 0.5rem 1.5rem;
   position: sticky;
+  /* position: fix; */
   top: 0;
   z-index: 30;
   backdrop-filter: blur(10px);
@@ -266,3 +267,114 @@
 }
 /* new code */
 
+
+
+/* Navbar Wrapper */
+/*
+.nav-wrapper {
+  background: linear-gradient(
+    145deg,
+    rgba(10, 10, 10, 0.95),
+    rgba(40, 40, 40, 0.95)
+  );
+  padding: 0.5rem 1.5rem;
+  position: sticky;
+  top: 10px;
+  z-index: 30;
+  border-radius: 15px;
+  backdrop-filter: blur(12px) saturate(1.2);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7),
+    -3px -3px 8px rgba(50, 50, 50, 0.5);
+  margin: 0 auto;
+  width: calc(100% - 2rem);
+  max-width: 1400px;
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  margin-bottom: 15px;
+}
+
+.nav-wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.8),
+    -5px -5px 12px rgba(60, 60, 60, 0.6);
+}
+*/
+
+/* Navbar Content */
+/*
+.nav-content {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+*/
+
+/* Logo Styling */
+/*
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.1rem;
+}
+*/
+
+/* Navbar Links */
+/*
+.nav-content ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+/* Individual Menu Item Styling */
+/*
+.menu-item {
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+*/
+
+/* Hover effect for menu items */
+/*
+.menu-item:hover {
+  color: #bc9cff;
+  transform: translateY(-3px);
+}
+*/
+
+/* Dynamic underline effect for menu items */
+/*
+.menu-item::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, #ff6bcb, #a17efe);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  border-radius: 2px;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
+*/

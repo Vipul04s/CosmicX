@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="stars">{generateStars()}</div>
         <nav className="nav-content">
           {/* <p className="logo">Logo</p> */}
-          <img className="logo" src="./src/assets/logo4.png" alt="Logo"></img>
+          <img className="logo" src="./src/assets/logo.png" alt="Logo"></img>
           <ul>
             <li>
               <Link className="menu-item" to="/">
