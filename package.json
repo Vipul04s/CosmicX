@@ -27,6 +27,8 @@
     "react-jss": "^10.10.0",
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.28.1",
+    "simplebar": "^6.3.0",
+    "simplebar-react": "^3.3.0",
     "styled-components": "^6.1.13",
     "three": "^0.171.0"
   },
